@@ -1,0 +1,148 @@
+@import url('../common.css');
+
+.common-body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: auto;
+}
+
+body {
+    font-family: sans-serif;  /* Changes the font of all text on the page */
+    text-align: left;       /* Centers the text on the page */
+    margin: 100px;           /* Adds space around the edge of the page */
+    background-color: #f0f0f0; /* Sets a light gray background color */
+    padding: auto;
+}
+
+
+.container {
+    background-color: #fff;
+    align-items: left;
+    justify-content: left;
+    padding-top: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 10px;
+    border-radius: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1300px;
+    margin: 20px auto;
+}
+
+.questions {
+
+    margin-left: 100px; 
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    line-height: 1.6;
+}
+   
+
+h1 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+h2 {
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+h3 {
+    text-align: center;
+    color: #1100ff;
+    align-items: center;
+    justify-content: center;
+}
+
+h4 {
+    text-align: center;
+    color: #1100ff;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form div {
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+select {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 1em; /* Increase the font size */
+}
+
+option {
+    font-size: 1em; /* Increase the font size */
+}
+
+button {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em; /* Increase the font size */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#level {
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #007bff;
+}
+
+nav ul li a {
+    font-size: 1.58em; /* Adjust the font size as needed */
+
+}
+

@@ -1,0 +1,55 @@
+@import url('common.css');
+
+.common-body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    text-size-adjust: 2em;
+}
+
+p {
+    text-size-adjust: 5em;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info {
+    padding: 20px;
+    background-color: #a9dbdd;
+    border: 2px solid black;
+    margin: 20px;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contact-method img {
+    margin-right: 10px;
+    width: 40px; /* Adjust the size of the image as needed */
+    height: auto;
+}
+
+.contact-method p {
+    margin: 0;
+}

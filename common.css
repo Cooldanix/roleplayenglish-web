@@ -1,0 +1,46 @@
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    background-color: #001b66;
+}
+
+nav {
+    background-color: #001b66;
+    border: 2px solid #444;
+    border-radius: 8px;
+    margin: 20px; /* Margen para el nav */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 25px; /* Cambia este valor para ajustar el tamaño de la fuente */
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.common-body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}

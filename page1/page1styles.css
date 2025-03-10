@@ -1,0 +1,63 @@
+@import url('../common.css');
+
+body {
+    font-family: sans-serif;  /* Changes the font of all text on the page */
+    text-align: center;       /* Centers the text on the page */
+    margin: 200px;           /* Adds space around the edge of the page */
+    padding: 50px;
+    background-color: #f0f0f0; /* Sets a light gray background color */
+}
+ 
+h1 {
+    color: #333;             /* Sets the heading text color to dark gray */
+}
+ 
+p {
+    color: #555;             /* Sets the paragraph text color to a medium gray */
+}
+/* Add this to your style.css file */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    color: #f0f0f0;
+    margin: 20px;
+    padding: 20px;
+    font-size: 2em
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+p {
+    font-size: 2em;
+    color: #000;
+    text-align: center;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px;
+    font-size: 0.6em;
+}
+
+.left-column, .right-column {
+    width: 50%;
+}
+
+.right-column {
+    border-left: 2px solid #000; /* Adds the vertical line */
+    padding-left: 50px;
+}

@@ -1,0 +1,121 @@
+@import url('../common.css');
+
+.common-body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+/* Otros estilos específicos para page3 */
+
+body {
+    font-family: sans-serif;  /* Changes the font of all text on the page */
+    text-align: center;       /* Centers the text on the page */
+    margin: 100px;           /* Adds space around the edge of the page */
+    background-color: #f0f0f0; /* Sets a light gray background color */
+}
+ 
+h1 {
+    color: #333;             /* Sets the heading text color to dark gray */
+}
+ 
+p {
+    color: #555;             /* Sets the paragraph text color to a medium gray */
+}
+/* Add this to your style.css file */
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 10em;
+    text-align: center;
+}
+
+
+p {
+    font-weight: bold;
+    font-size: 5em;
+    text-align: center;
+    margin: 0.5em;
+    margin-left: 2em;
+    color: black; 
+}
+
+div {
+    font-size: 2em;
+    text-align: center;
+    margin: 20px;
+    line-break: strict;
+    color: #ffffff;
+}
+
+
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px;
+    font-size: 0.6em;
+}
+
+.left-column, .right-column {
+    width: 50%;
+}
+
+.right-column {
+    border-left: 2px solid #000; /* Adds the vertical line */
+    padding-left: 5px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        border-left: none;
+        padding-left: 0;
+    }
+}
