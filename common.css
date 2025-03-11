@@ -3,7 +3,7 @@ header {
     top: 0;
     z-index: 1000;
     background-color: #001b66;
-    width: 100%; /* Ensure the header takes the full width */
+    max-width: 100%; /* Ensure the header takes the full width */
 }
 
 nav {
