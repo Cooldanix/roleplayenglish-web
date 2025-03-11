@@ -1,15 +1,16 @@
 header {
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 1000;
     background-color: #001b66;
+    width: 100%; /* Ensure the header takes the full width */
 }
 
 nav {
     background-color: #001b66;
     border: 2px solid #444;
     border-radius: 8px;
-    margin: 20px; /* Margen para el nav */
+    margin: 0; /* Remove margin to avoid issues with sticky positioning */
     padding: 10px;
 }
 
@@ -19,6 +20,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
 nav ul li {
@@ -30,7 +32,7 @@ nav ul li a {
     text-decoration: none;
     padding: 10px 20px;
     display: block;
-    font-size: 25px; /* Cambia este valor para ajustar el tamaño de la fuente */
+    font-size: 25px; /* Adjust this value to change the font size */
 }
 
 nav ul li a:hover {
@@ -43,4 +45,40 @@ nav ul li a:hover {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    img {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+
+    img {
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
 }
