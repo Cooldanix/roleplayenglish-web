@@ -1,22 +1,21 @@
 @import url('common.css');
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    font-family: sans-serif;  /* Changes the font of all text on the page */
+    text-align: center;       /* Centers the text on the page */
+    margin: 200px;           /* Adds space around the edge of the page */
+    padding: 50px;
+    background-color: #f0f0f0; /* Sets a light gray background color */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+
 }
 
 header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #001b66;
     width: 100%; /* Ensure the header takes the full width */
 }
 
@@ -27,9 +26,11 @@ h1 {
 }
 
 img {
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
-    max-width: 40%;
+    padding: 20px;
 }
 
 .common-body {
@@ -37,4 +38,27 @@ img {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+   
+    h1 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    img {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+   
+    h1 {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+
+    img {
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
 }
