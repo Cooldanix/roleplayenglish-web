@@ -19,9 +19,6 @@ h1 {
     color: #333;
 }
 
-p {
-    color: #555;
-}
 
 /* Otros estilos específicos para page3 */
 
@@ -36,9 +33,6 @@ h1 {
     color: #333;             /* Sets the heading text color to dark gray */
 }
  
-p {
-    color: #555;             /* Sets the paragraph text color to a medium gray */
-}
 /* Add this to your style.css file */
 body {
     font-family: Arial, sans-serif;
@@ -59,10 +53,10 @@ h2 {
 
 p {
     font-weight: bold;
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
-    margin: 0.5em;
-    margin-left: 2em;
+    margin: 1em;
+    margin-left: 0em;
     color: black; 
 }
 
@@ -106,7 +100,7 @@ img {
     }
 
     p {
-        font-size: 0.9em;
+        font-size: 1.2em;
     }
 
     .columns {

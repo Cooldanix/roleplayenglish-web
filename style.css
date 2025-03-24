@@ -5,7 +5,7 @@ body {
     text-align: center;       /* Centers the text on the page */
     margin: 200px;           /* Adds space around the edge of the page */
     padding: 50px;
-    background-color: #f0f0f0; /* Sets a light gray background color */
+    background-color: #ffffff; /* Sets a light gray background color */
     display: flex;
     flex-direction: column;
     align-items: center;

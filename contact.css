@@ -22,7 +22,13 @@ h1 {
 h2 {
     text-align: center;
     color: #333;
-    text-size-adjust: 2em;
+    text-size-adjust: 0.5em;
+}
+
+h3 {
+    text-align: center;
+    color: #000000;
+    text-size-adjust: 0.5em;
 }
 
 p {
