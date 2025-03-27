@@ -25,21 +25,24 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column; /* Cambiar a columna para pantallas pequeñas */
-    align-items: center;
+    display: flex; /* Usar flexbox para organizar los elementos */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten a varias líneas */
+    justify-content: space-around; /* Espaciado uniforme entre los elementos */
+    align-items: center; /* Centrar los elementos verticalmente */
 }
 
 nav ul li {
-    margin: 5px 0; /* Espaciado entre elementos */
+    margin: 5px 0; /* Espaciado vertical entre los elementos */
+    flex-basis: 33.33%; /* Cada elemento ocupa un tercio del ancho */
+    text-align: center; /* Centrar el contenido dentro del elemento */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 15px;
     display: block;
-    font-size: 18px; /* Reducir tamaño de fuente para pantallas pequeñas */
+    font-size: 14px; /* Ajustar tamaño de fuente */
     text-align: center;
 }
 
@@ -57,11 +60,36 @@ body {
     background-color: #ffffff;
 }
 
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav {
+        padding: 5px; /* Reducir padding del nav */
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Permitir que los elementos se ajusten a varias líneas */
+    }
+
+    nav ul li {
+        margin: 3px 0; /* Reducir margen entre los elementos */
+        flex-basis: 33.33%; /* Cada elemento ocupa un tercio del ancho */
+    }
+
+    nav ul li a {
+        font-size: 12px; /* Reducir tamaño de fuente para los vínculos */
+        padding: 5px 10px; /* Reducir padding de los vínculos */
+    }
+}
+
 /* Tabletas (768px en adelante) */
 @media (min-width: 768px) {
     nav ul {
         flex-direction: row; /* Cambiar a fila para pantallas más grandes */
         justify-content: space-around;
+    }
+
+    nav ul li {
+        flex-basis: auto; /* Restaurar el ancho automático */
     }
 
     nav ul li a {

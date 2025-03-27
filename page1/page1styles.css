@@ -49,3 +49,33 @@ img, image {
     display: block;  /* Removes inline spacing issues */
     margin: 0 auto;  /* Centers the image */
 }
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 1.5em; /* Reduce font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Reduce font size for smaller screens */
+    }
+
+    p {
+        font-size: 1em; /* Reduce font size for smaller screens */
+        word-wrap: break-word; /* Ensure text wraps within the container */
+        overflow-wrap: break-word;
+        max-width: 95%; /* Ensure text stays within the container */
+        margin: 0 auto; /* Center the text */
+    }
+
+    div {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+        margin: 10px; /* Reduce margins for smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    img, image {
+        max-width: 90%; /* Slightly reduce image size for smaller screens */
+    }
+}
