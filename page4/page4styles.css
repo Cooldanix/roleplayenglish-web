@@ -18,22 +18,27 @@ body {
 
 .container {
     background-color: #fff;
-    padding: 20px;
+    padding: 200px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 90%; /* Ajusta el ancho al 90% de la pantalla */
-    max-width: 1000px; /* Máximo ancho para pantallas grandes */
-    margin: 20px auto; /* Centra el contenedor */
-    font-size: 1.2em; /* Tamaño de fuente predeterminado */
+    width: 100%; /* Ajusta el ancho al 90% de la pantalla */
+    padding-top: 0px; /* Añade espacio en la parte superior */
+    max-width: 1200px; /* Máximo ancho para pantallas grandes */
+    margin-top: 20px; /* Centra el contenedor */
+    margin-bottom: 20px; /* Centra el contenedor */
+    margin-left: 155px; /* Centra el contenedor */
+    margin-right: 10px; /* Centra el contenedor */
+    font-size: 1em; /* Tamaño de fuente predeterminado */
 }
 
 .questions {
 
-    margin-left: 100px; 
+    margin-left: 0px; 
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 0px;
     line-height: 1.6;
+    font-size: 1em; /* Tamaño de fuente predeterminado */
 }
    
 
@@ -102,37 +107,10 @@ select {
 }
 
 option {
-    font-size: 0.6em; /* Increase the font size */
+    font-size: 1em; /* Increase the font size */
     width: 80%;
     padding: 0.5em;
     margin-right: 1em;
-}
-
-/* Media Queries para pantallas más pequeñas */
-@media (max-width: 768px) {
-    select {
-        width: 90%; /* Ajusta el ancho para pantallas pequeñas */
-        font-size: 1em; /* Mantén el tamaño de fuente consistente */
-    }
-
-    option {
-        font-size: 1em; /* Asegura que las opciones tengan el mismo tamaño */
-        padding: 10px;
-        margin-right: 1em;
-    }
-}
-
-@media (max-width: 480px) {
-    select {
-        width: 100%; /* Usa todo el ancho disponible en pantallas muy pequeñas */
-        font-size: 0.9em; /* Ajusta ligeramente el tamaño de la fuente */
-    }
-
-    option {
-        font-size: 0.9em; /* Ajusta el tamaño de las opciones */
-        padding: 10px;
-        margin-right: 1em;
-    }
 }
 
 button {
@@ -162,6 +140,34 @@ button:hover {
     text-align: center;
 }
 
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    select {
+        width: 90%; /* Ajusta el ancho para pantallas pequeñas */
+        font-size: 1em; /* Mantén el tamaño de fuente consistente */
+    }
+
+    option {
+        font-size: 0.5em; /* Asegura que las opciones tengan el mismo tamaño */
+        padding: 0px;
+        margin-right: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    select {
+        width: 100%; /* Usa todo el ancho disponible en pantallas muy pequeñas */
+        font-size: 2em; /* Ajusta ligeramente el tamaño de la fuente */
+    }
+
+    option {
+        font-size: 1em; /* Ajusta el tamaño de las opciones */
+        padding: 0px;
+        margin-right: 1em;
+    }
+}
+
+
 /* Media query for small screens */
 @media (max-width: 768px) {
 
@@ -190,4 +196,72 @@ button:hover {
     img, image {
         max-width: 90%; /* Slightly reduce image size for smaller screens */
     }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        font-size: 1.5em; /* Reduce font size for smaller screens */
+        padding-left: 0px; /* Reduce padding for smaller screens */
+        padding-right: 0px; /* Reduce padding for smaller screens */
+        padding-top: 0px; /* Reduce padding for smaller screens */
+        padding-bottom: 0px; /* Reduce padding for smaller screens */
+        margin-top: 0px; /* Reduce margin for smaller screens */    
+        margin-bottom: 0px; /* Reduce margin for smaller screens */
+        margin-right: 0px; /* Reduce margin for smaller screens */
+        margin-left: 0px; /* Reduce margin for smaller screens */
+    }
+
+    #questions {
+        font-size: 5em; /* Reduce font size for smaller screens */
+        padding-left: 0px; /* Reduce padding for smaller screens */
+        padding-right: 0px; /* Reduce padding for smaller screens */
+        padding-top: 0px; /* Reduce padding for smaller screens */
+        padding-bottom: 0px; /* Reduce padding for smaller screens */
+        margin-top: 0px; /* Reduce margin for smaller screens */    
+        margin-bottom: 0px; /* Reduce margin for smaller screens */
+        margin-right: 0px; /* Reduce margin for smaller screens */
+        margin-left: 0px; /* Reduce margin for smaller screens */
+    }
+    
+
+    label {
+        font-size: 0.2em; /* Reduce font size for smaller screens */
+        padding-left: 0px; /* Reduce padding for smaller screens */
+        padding-right: 0px; /* Reduce padding for smaller screens */
+        padding-top: 0px; /* Reduce padding for smaller screens */
+        padding-bottom: 0px; /* Reduce padding for smaller screens */
+        margin-top: 0px; /* Reduce margin for smaller screens */    
+        margin-bottom: 0px; /* Reduce margin for smaller screens */
+        margin-right: 0px; /* Reduce margin for smaller screens */
+        margin-left: 0px; /* Reduce margin for smaller screens */
+    }
+    
+
+    select {
+        font-size: 0.2em; /* Reduce font size for smaller screens */
+        padding-left: 0px; /* Reduce padding for smaller screens */
+        padding-right: 0px; /* Reduce padding for smaller screens */
+        padding-top: 0px; /* Reduce padding for smaller screens */
+        padding-bottom: 0px; /* Reduce padding for smaller screens */
+        margin-top: 0px; /* Reduce margin for smaller screens */    
+        margin-bottom: 0px; /* Reduce margin for smaller screens */
+        margin-right: 0px; /* Reduce margin for smaller screens */
+        margin-left: 0px; /* Reduce margin for smaller screens */
+    
+    }
+
+    .question-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+        font-size: 1em;
+    }
+    
+    .question-item select {
+        margin-top: 0.5rem; /* Adjust spacing to move closer to the label */
+        font-size: 0.2em;
+    }
+    
+    
 }

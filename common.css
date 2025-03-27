@@ -104,7 +104,7 @@ body {
 /* Escritorios (992px en adelante) */
 @media (min-width: 992px) {
     .container {
-        max-width: 960px; /* Ajuste para escritorios */
+        max-width: 1200px; /* Ajuste para escritorios */
     }
 
     nav ul li a {

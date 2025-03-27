@@ -17,6 +17,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0px;
     padding: 0px;
+    max-width: 100%;
+    min-width: 0%;
 }
 
 div {
@@ -29,17 +31,22 @@ div {
 h1 {
     font-size: 2.5em;
     text-align: center;
+    
 }
 
 h2 {
     font-size: 2em;
     text-align: center;
+    padding: 2em; /* Reduce padding for smaller screens */
 }
 
 p {
     font-size: 2em;
     color: #000;
     text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+ 
 }
 
 /* Make images responsive */
@@ -58,7 +65,8 @@ img, image {
     }
 
     h2 {
-        font-size: 1.5em; /* Reduce font size for smaller screens */
+        font-size: 1em; /* Reduce font size for smaller screens */
+        padding: 2em; /* Reduce padding for smaller screens */
     }
 
     p {
@@ -67,12 +75,15 @@ img, image {
         overflow-wrap: break-word;
         max-width: 95%; /* Ensure text stays within the container */
         margin: 0 auto; /* Center the text */
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-bottom: 1em;
     }
 
     div {
         font-size: 1.2em; /* Adjust font size for smaller screens */
         margin: 10px; /* Reduce margins for smaller screens */
-        padding: 10px; /* Reduce padding for smaller screens */
+        padding: 2em; /* Reduce padding for smaller screens */
     }
 
     img, image {

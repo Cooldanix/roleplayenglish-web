@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     questions.forEach((question, index) => {
         const questionDiv = document.createElement("div");
+        questionDiv.classList.add("question-item"); // Add a class for styling
         questionDiv.innerHTML = `
             <label for="q${index + 1}">${index + 1}. ${question}</label>
             <select id="q${index + 1}" name="q${index + 1}" required>
