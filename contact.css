@@ -16,6 +16,7 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 2.5em;
     color: #333;
 }
 
@@ -79,6 +80,10 @@ p {
         max-width: 95%; /* Aumentar el ancho permitido del texto */
     }
 
+    h1 {
+        font-size: 1.5em; /* Reducir tamaño de fuente en pantallas pequeñas */
+    }
+    
     .contact-method h3 {
         font-size: 1em; /* Reducir tamaño de fuente en pantallas pequeñas */
         max-width: 95%; /* Asegurar que el texto no se salga del contenedor */

@@ -41,7 +41,7 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: center;
 }
 
@@ -50,10 +50,21 @@ h2 {
     text-align: center;
 }
 
+.custom-div-style {
+    /* Add the styles that were previously inline */
+    /* Example: */
+    background-color: #5c8eb8;
+    padding: 20px 50px 20px 50px; /* Adjust padding as needed */
+    border: 2px solid #000000;
+    border-radius: 5px;
+    margin: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
 
 p {
     font-weight: bold;
-    font-size: 3em;
+    font-size: 1.5em;
     text-align: center;
     margin: 1em;
     margin-left: 0em;
@@ -118,7 +129,7 @@ img {
 @media (max-width: 768px) {
 
     h1 {
-        font-size: 1.8em; /* Reduce font size for smaller screens */
+        font-size: 1.5em; /* Reduce font size for smaller screens */
     }
 
     h2 {
@@ -126,11 +137,20 @@ img {
     }
 
     p {
-        font-size: 1em; /* Reduce font size for smaller screens */
+        font-size: 1.5em; /* Reduce font size for smaller screens */
         word-wrap: break-word; /* Ensure text wraps within the container */
         overflow-wrap: break-word;
         max-width: 95%; /* Ensure text stays within the container */
         margin: 0 auto; /* Center the text */
+    }
+
+    .custom-div-style {
+        border: 2px solid black; 
+        padding: 20px 10px 20px 10px; 
+        font-size: 1.2em; 
+        margin-left: 5%; 
+        margin-right: 5%; 
+        background-color: #5c8eb8;
     }
 
     div {

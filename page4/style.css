@@ -8,3 +8,12 @@
 .question-item select {
     margin-top: 0.5rem; /* Adjust spacing to move closer to the label */
 }
+
+.custom-div-style {
+    /* Add the styles that were previously inline */
+    /* Example: */
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

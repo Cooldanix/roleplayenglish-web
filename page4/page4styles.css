@@ -47,7 +47,7 @@ h1 {
     align-items: center;
     justify-content: center;
     color: #333;
-    font-size: 1.3em;
+    font-size: 2em;
     padding: 10px;
 }
 
@@ -140,43 +140,62 @@ button:hover {
     text-align: center;
 }
 
-/* Media Queries para pantallas más pequeñas */
-@media (max-width: 768px) {
-    select {
-        width: 90%; /* Ajusta el ancho para pantallas pequeñas */
-        font-size: 1em; /* Mantén el tamaño de fuente consistente */
-    }
-
-    option {
-        font-size: 0.5em; /* Asegura que las opciones tengan el mismo tamaño */
-        padding: 0px;
-        margin-right: 1em;
-    }
+.contact-nav {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 40%; /* Center the list */
+    margin-right: 38%; /* Center the list */
 }
 
-@media (max-width: 480px) {
-    select {
-        width: 100%; /* Usa todo el ancho disponible en pantallas muy pequeñas */
-        font-size: 2em; /* Ajusta ligeramente el tamaño de la fuente */
-    }
+.contact-nav ul {
+    list-style-type: none;
+    padding: 0;
 
-    option {
-        font-size: 1em; /* Ajusta el tamaño de las opciones */
-        padding: 0px;
-        margin-right: 1em;
-    }
 }
 
+.contact-nav ul li {
+    display: inline-block; /* Display links inline */
+    margin: 0 10px; /* Add spacing between links */
+    
+}
+
+.contact-nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Custom color for the link */
+    font-size: 1.5em; /* Adjust font size */
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-nav ul li a:hover {
+    background-color: #0056b3; /* Change background on hover */
+    color: white; /* Change text color on hover */
+    
+}
 
 /* Media query for small screens */
 @media (max-width: 768px) {
 
+    option {
+        font-size: 1em; /* Asegura que las opciones tengan el mismo tamaño */
+        padding: 0px;
+        margin-right: 1em;
+        margin-top: 0px;
+    }
+
     h1 {
-        font-size: 1.8em; /* Reduce font size for smaller screens */
+        font-size: 1.5em; /* Reduce font size for smaller screens */
     }
 
     h2 {
-        font-size: 1.5em; /* Reduce font size for smaller screens */
+        font-size: 1.1em; /* Reduce font size for smaller screens */
+
+    }
+
+    h3 {
+        padding-left: 10%; /* Reduce padding for smaller screens */
+        padding-right: 10%; /* Reduce padding for smaller screens */
     }
 
     p {
@@ -196,15 +215,16 @@ button:hover {
     img, image {
         max-width: 90%; /* Slightly reduce image size for smaller screens */
     }
-}
 
-@media screen and (max-width: 768px) {
     .container {
         font-size: 1.5em; /* Reduce font size for smaller screens */
-        padding-left: 0px; /* Reduce padding for smaller screens */
-        padding-right: 0px; /* Reduce padding for smaller screens */
-        padding-top: 0px; /* Reduce padding for smaller screens */
-        padding-bottom: 0px; /* Reduce padding for smaller screens */
+        display: contents; /* Use contents to avoid extra space around the container */
+        flex-direction: column;
+        gap: 0px; /* Reduce gap for smaller screens */
+        padding-left: 1px; /* Reduce padding for smaller screens */
+        padding-right: 1px; /* Reduce padding for smaller screens */
+        padding-top: 1px; /* Reduce padding for smaller screens */
+        padding-bottom: 1px; /* Reduce padding for smaller screens */
         margin-top: 0px; /* Reduce margin for smaller screens */    
         margin-bottom: 0px; /* Reduce margin for smaller screens */
         margin-right: 0px; /* Reduce margin for smaller screens */
@@ -212,41 +232,27 @@ button:hover {
     }
 
     #questions {
-        font-size: 5em; /* Reduce font size for smaller screens */
-        padding-left: 0px; /* Reduce padding for smaller screens */
-        padding-right: 0px; /* Reduce padding for smaller screens */
-        padding-top: 0px; /* Reduce padding for smaller screens */
-        padding-bottom: 0px; /* Reduce padding for smaller screens */
-        margin-top: 0px; /* Reduce margin for smaller screens */    
-        margin-bottom: 0px; /* Reduce margin for smaller screens */
-        margin-right: 0px; /* Reduce margin for smaller screens */
-        margin-left: 0px; /* Reduce margin for smaller screens */
+        font-size: 4em; /* Reduce font size for smaller screens */
+        margin-top: 0px; /* Reduce margin for smaller screens */
+        display: contents; /* Use contents to avoid extra space around the container */
+        
     }
     
 
     label {
         font-size: 0.2em; /* Reduce font size for smaller screens */
-        padding-left: 0px; /* Reduce padding for smaller screens */
-        padding-right: 0px; /* Reduce padding for smaller screens */
-        padding-top: 0px; /* Reduce padding for smaller screens */
-        padding-bottom: 0px; /* Reduce padding for smaller screens */
-        margin-top: 0px; /* Reduce margin for smaller screens */    
-        margin-bottom: 0px; /* Reduce margin for smaller screens */
-        margin-right: 0px; /* Reduce margin for smaller screens */
-        margin-left: 0px; /* Reduce margin for smaller screens */
+        padding-top: 10%;
+        padding-bottom: 0%;
+        margin-bottom: 0.1rem; /* Reduce margin for smaller screens */
+        line-height: 1.4; /* Reduce line height for smaller screens */
+
     }
     
 
     select {
-        font-size: 0.2em; /* Reduce font size for smaller screens */
-        padding-left: 0px; /* Reduce padding for smaller screens */
-        padding-right: 0px; /* Reduce padding for smaller screens */
-        padding-top: 0px; /* Reduce padding for smaller screens */
-        padding-bottom: 0px; /* Reduce padding for smaller screens */
-        margin-top: 0px; /* Reduce margin for smaller screens */    
-        margin-bottom: 0px; /* Reduce margin for smaller screens */
-        margin-right: 0px; /* Reduce margin for smaller screens */
-        margin-left: 0px; /* Reduce margin for smaller screens */
+        width: 95%; /* Ajusta el ancho para pantallas pequeñas */
+        font-size: 0.2em; /* Mantén el tamaño de fuente consistente */
+     
     
     }
 
@@ -256,12 +262,46 @@ button:hover {
         align-items: flex-start;
         margin-bottom: 1rem;
         font-size: 1em;
+        padding: 0px; /* Reduce padding for smaller screens */
     }
     
     .question-item select {
         margin-top: 0.5rem; /* Adjust spacing to move closer to the label */
-        font-size: 0.2em;
+        font-size: 0.2em; /* Reduce font size for smaller screens */
+
+    }
+    .contact-nav {
+        margin-top: 20px;
+        text-align: center;
+        margin-left: 10%; /* Center the list */
+        margin-right: 10%; /* Center the list */
     }
     
+    .contact-nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
     
-}
+    .contact-nav ul li {
+        display: inline-block; /* Display links inline */
+        margin: 0 10px; /* Add spacing between links */
+    }
+    
+    .contact-nav ul li a {
+        text-decoration: none;
+        color: #ffffff; /* Custom color for the link */
+        font-size: 1.5em; /* Adjust font size */
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .contact-nav ul li a:hover {
+        background-color: #0056b3; /* Change background on hover */
+        color: white; /* Change text color on hover */
+    }
+
+/* Reset básico para selects y labels */label, select {display: block;width: 100%;font-size: 1.3rem;}/* Contenedor de preguntas */.question-container {margin-bottom: 1.5rem;}/* Estilos específicos para móviles */@media (max-width: 768px) {/* Ajusta el espaciado vertical */.question-container {margin-bottom: 1rem;}/* Reduce el padding en selects */select {padding: 0.5rem;font-size: 1.3rem;}/* Ajusta el interlineado en labels */label {line-height: 1.4;margin-bottom: 0.5rem;}/* Asegura que los selects no excedan el ancho */select {max-width: 100%;box-sizing: border-box;}}
+
+}    

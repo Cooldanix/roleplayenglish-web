@@ -29,25 +29,30 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: center;
 }
 
 h2 {
     font-size: 1.5em;
     text-align: center;
+    padding-left: 300px;
+    padding-right: 300px; /* Reduce padding for smaller screens */
 }
+
 
 h3 {
     font-size: 2em;
     text-align: center;
     font-weight: bold;
-}
+    text-decoration: underline;
+ }
 
 h4 {
     font-size: 2em;
     text-align: center;
     font-weight: bold;
+    text-decoration: underline;
 
 }
 
@@ -55,20 +60,42 @@ h5 {
     font-size: 2em;
     text-align: center;
     font-weight: bold;
+    text-decoration: underline;
 
 }
 
+.custom-div-style {
+    /* Add the styles that were previously inline */
+    /* Example: */
+    background-color: #5c8eb8;
+    padding: 20px 50px 20px 50px; /* Adjust padding as needed */
+    border: 2px solid #000000;
+    border-radius: 5px;
+    margin: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
 
 
 p {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
     margin: 0.5em;
     margin-left: 2em;
     color: black; 
 }
 
+h6 {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    margin: 0.5em;
+    margin-left: 2em;
+    color: black; 
+    margin-left: 25%;
+    margin-right: 25%;
+}
 
 div {
     font-size: 1.5em;
@@ -112,11 +139,14 @@ img {
 @media (max-width: 768px) {
 
     h1 {
-        font-size: 1.8em; /* Reduce font size for smaller screens */
+        font-size: 2em; /* Reduce font size for smaller screens */
     }
 
     h2 {
         font-size: 1.5em; /* Reduce font size for smaller screens */
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px; /* Reduce padding for smaller screens */
     }
 
     p {
@@ -124,7 +154,26 @@ img {
         word-wrap: break-word; /* Ensure text wraps within the container */
         overflow-wrap: break-word;
         max-width: 95%; /* Ensure text stays within the container */
-        margin: 0 auto; /* Center the text */
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    h6 {
+        font-size: 1em; /* Reduce font size for smaller screens */
+        word-wrap: break-word; /* Ensure text wraps within the container */
+        overflow-wrap: break-word;
+        max-width: 95%; /* Ensure text stays within the container */
+        margin-left: 9.8%;
+        margin-right: 9.8%;
+    }
+
+    .custom-div-style {
+        border: 2px solid black; 
+        padding: 20px 10px 20px 10px; 
+        font-size: 1.2em; 
+        margin-left: 5%; 
+        margin-right: 5%; 
+        background-color: #5c8eb8;
     }
 
     div {
