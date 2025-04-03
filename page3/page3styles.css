@@ -92,17 +92,26 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 10px;
+    margin: 1px;
     font-size: 0.6em;
 }
 
-.left-column, .right-column {
-    width: 50%;
+.left-column {
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 0%;
+    padding-left: 1em;
+    padding-right: 0em;
+   
 }
 
 .right-column {
-    border-left: 2px solid #000; /* Adds the vertical line */
-    padding-left: 5px;
+    border-left: 5px solid #000; /* Adds the vertical line */
+    padding-left: 1em;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-right: 1em;
+    width: 100%;
 }
 
 @media (max-width: 600px) {
@@ -151,6 +160,16 @@ img {
         margin-left: 5%; 
         margin-right: 5%; 
         background-color: #5c8eb8;
+    }
+
+    .left-column {
+        border-bottom: 5px solid #000; /* Adds the bottom line instead of left */
+        margin-left: 0%;
+        padding-right: 1px;
+    }
+
+    .right-column {
+        padding: 0px 0px 0px 0px; /* Adjust padding for smaller screens */
     }
 
     div {

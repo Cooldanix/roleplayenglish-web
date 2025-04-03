@@ -25,6 +25,40 @@ h1 {
     margin: 20px 0;
 }
 
+h2 {
+    font-size: 1.5em; /* Reduce font size for smaller screens */
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px; /* Reduce padding for smaller screens */
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px; /* Reduce padding for smaller screens */
+}
+
+.custom-div-style {
+    /* Add the styles that were previously inline */
+    /* Example: */
+    background-color: #5c8eb8;
+    padding: 20px 50px 20px 50px; /* Adjust padding as needed */
+    border: 2px solid #000000;
+    border-radius: 5px;
+    margin: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+div {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px;
+    line-break: strict;
+    color: #ffffff;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -44,20 +78,40 @@ img {
 @media (max-width: 768px) {
    
     h1 {
-        font-size: 1.5em; /* Adjust font size for smaller screens */
+        font-size: 2em; /* Adjust font size for smaller screens */
     }
 
     img {
         padding: 10px; /* Adjust padding for smaller screens */
     }
+
+    .custom-div-style {
+        border: 2px solid black; 
+        padding: 20px 10px 20px 10px; 
+        font-size: 1.5em; 
+        margin-left: 5%; 
+        margin-right: 5%; 
+        background-color: #5c8eb8;
+    }
+
+    div {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+        margin: 10px; /* Reduce margins for smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Reduce font size for smaller screens */
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px; /* Reduce padding for smaller screens */
+    }
+
 }
 
 @media (max-width: 480px) {
    
-    h1 {
-        font-size: 1.2em; /* Adjust font size for smaller screens */
-    }
-
+    
     img {
         padding: 5px; /* Adjust padding for smaller screens */
     }

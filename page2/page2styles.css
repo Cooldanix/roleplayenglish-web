@@ -33,12 +33,7 @@ h1 {
     text-align: center;
 }
 
-h2 {
-    font-size: 1.5em;
-    text-align: center;
-    padding-left: 300px;
-    padding-right: 300px; /* Reduce padding for smaller screens */
-}
+
 
 
 h3 {
@@ -64,17 +59,7 @@ h5 {
 
 }
 
-.custom-div-style {
-    /* Add the styles that were previously inline */
-    /* Example: */
-    background-color: #5c8eb8;
-    padding: 20px 50px 20px 50px; /* Adjust padding as needed */
-    border: 2px solid #000000;
-    border-radius: 5px;
-    margin: 20px;
-    margin-left: 25%;
-    margin-right: 25%;
-}
+
 
 
 p {
@@ -97,13 +82,7 @@ h6 {
     margin-right: 25%;
 }
 
-div {
-    font-size: 1.5em;
-    text-align: center;
-    margin: 20px;
-    line-break: strict;
-    color: #ffffff;
-}
+
 
 .objetivos-especificos p {
     text-align: left; /* Alinea el texto a la izquierda */
@@ -139,18 +118,22 @@ img {
 @media (max-width: 768px) {
 
     h1 {
-        font-size: 2em; /* Reduce font size for smaller screens */
+        font-size: 1.7em; /* Reduce font size for smaller screens */
     }
 
-    h2 {
+    
+    h3 {
         font-size: 1.5em; /* Reduce font size for smaller screens */
-        text-align: center;
-        padding-left: 30px;
-        padding-right: 30px; /* Reduce padding for smaller screens */
+        
+    }
+
+    h4 {
+        font-size: 1.5em; /* Reduce font size for smaller screens */
+        
     }
 
     p {
-        font-size: 1em; /* Reduce font size for smaller screens */
+        font-size: 1.2em; /* Reduce font size for smaller screens */
         word-wrap: break-word; /* Ensure text wraps within the container */
         overflow-wrap: break-word;
         max-width: 95%; /* Ensure text stays within the container */
@@ -159,7 +142,7 @@ img {
     }
 
     h6 {
-        font-size: 1em; /* Reduce font size for smaller screens */
+        font-size: 1.2em; /* Reduce font size for smaller screens */
         word-wrap: break-word; /* Ensure text wraps within the container */
         overflow-wrap: break-word;
         max-width: 95%; /* Ensure text stays within the container */
