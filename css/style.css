@@ -1,0 +1,241 @@
+/* --- Estilos Generales y Fuentes --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --primary-color: #d4af37; /* Dorado cinematográfico */
+    --secondary-color: #0d0d0d;
+    --text-color: #f5f5f1;
+    --overlay-color: rgba(0, 0, 0, 0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'courier', courier;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    /* --- CÓDIGO CLAVE PARA EL FONDO DE PANTALLA COMPLETA --- */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el espacio */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Crea un efecto parallax al hacer scroll */
+    
+    position: relative; /* Necesario para que el overlay funcione */
+}
+
+/* Overlay oscuro para que el texto sea siempre legible sobre las imágenes */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: var(--overlay-color);
+    z-index: -1; /* Se coloca detrás de todo el contenido */
+}
+
+/* --- Fondos específicos para cada página --- */
+/* La ruta '../' es necesaria porque style.css está dentro de la carpeta /css */
+#page-bienvenida { background-image: url('../images/spidermans.gif'); }
+#page-objetivo { background-image: url('../images/v.gif'); }
+#page-metodologia { background-image: url('../images/lotr.gif'); }
+#page-contacto { background-image: url('../images/dune2.gif'); }
+
+
+/* --- Header y Navegación --- */
+header {
+    background: rgba(100, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between; /* Coloca el logo a la izq. y la nav a la der. */
+    align-items: center;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    width: 100%;
+}
+
+.logo {
+    font-family: 'courier', courier;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+   }
+
+.header-logo {
+    height: 100px; /* Ajusta la altura del logo como necesites */
+    width: auto;  /* El ancho se ajustará automáticamente */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Alinea verticalmente los links con el botón circular */
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+nav a.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+
+
+/* --- Contenido Principal --- */
+main {
+    flex-grow: 1; /* Permite que el main ocupe el espacio sobrante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.content-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 3rem;
+    border-radius: 10px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    text-align: center;
+    max-width: 800px;
+}
+
+.content-box h1, .content-box h2, .content-box h3 {
+    font-family: 'Poppins', courier;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.content-box h1 { font-size: 3rem; }
+.content-box h2 { font-size: 2.5rem; }
+.content-box p { font-size: 1.2rem; line-height: 1.7; margin-bottom: 1.5rem; }
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+
+/* --- Estilos específicos de Metodología --- */
+.content-box.transparent { background-color: transparent; border: none; }
+.cards-container {
+    display: flex;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    justify-content: center;
+}
+.card {
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    flex: 1;
+}
+
+/* --- Estilos específicos de Contacto --- */
+.contact-links a {
+    display: block;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.contact-links a:hover {
+    color: var(--primary-color);
+}
+
+/* --- ESTILOS ACTUALIZADOS PARA EL BOTÓN DE IDIOMA --- */
+.lang-button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    
+    /* Hacemos el botón un círculo perfecto */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Esto lo hace circular */
+    
+    /* Centramos el texto (EN/ES) dentro del círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #000;
+    width: 100%;
+}
+
+h1[data-key="welcome_title"] {
+  font-family: 'courier', courier; /* ¡Reemplaza esto por la fuente que quieras! */
+  /* También puedes cambiar otros estilos si lo necesitas */
+  font-size: 2.5em; /* Un tamaño más grande, por ejemplo */
+  color: #d8b800;    /* Si quieres cambiar el color */
+}
+h2[data-key="objective_title"] {
+  font-family: 'courier', courier; /* ¡Reemplaza esto por la fuente que quieras! */
+  /* También puedes cambiar otros estilos si lo necesitas */
+  font-size: 2.5em; /* Un tamaño más grande, por ejemplo */
+  color: #d8b800;    /* Si quieres cambiar el color */
+}
+
+h2[data-key="contact_title"] {
+  font-family: 'courier', courier; /* ¡Reemplaza esto por la fuente que quieras! */
+  /* También puedes cambiar otros estilos si lo necesitas */
+  font-size: 2.5em; /* Un tamaño más grande, por ejemplo */
+  color: #d8b800;    /* Si quieres cambiar el color */
+}
+
+h2[data-key="method_title"] {
+  font-family: 'courier', courier; /* ¡Reemplaza esto por la fuente que quieras! */
+  /* También puedes cambiar otros estilos si lo necesitas */
+  font-size: 2.5em; /* Un tamaño más grande, por ejemplo */
+  color: #d8b800;    /* Si quieres cambiar el color */
+}

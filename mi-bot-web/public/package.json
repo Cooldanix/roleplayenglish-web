@@ -1,0 +1,17 @@
+{
+  "name": "simple-ai-bot",
+  "version": "1.0.0",
+  "description": "Bot de IA sencillo para página web",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "@google/generative-ai": "^0.15.0"
+    }
+}
