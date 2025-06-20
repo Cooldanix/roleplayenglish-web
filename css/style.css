@@ -239,3 +239,79 @@ h2[data-key="method_title"] {
   font-size: 2.5em; /* Un tamaño más grande, por ejemplo */
   color: #d8b800;    /* Si quieres cambiar el color */
 }
+
+/* For tablets and smaller devices (up to 768px wide) */
+@media (max-width: 768px) {
+    
+    /* 1. Stack header items vertically */
+    header {
+        flex-direction: column;
+        gap: 1.5rem; /* Add space between logo and nav */
+        padding: 1.5rem 5%;
+    }
+
+    .header-logo {
+        height: 70px; /* Make logo smaller on mobile */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav links vertically */
+        gap: 1rem; /* Adjust gap for vertical layout */
+        width: 100%; /* Make the nav take full width */
+        text-align: center;
+    }
+
+    nav li {
+        width: 100%; /* Ensure list items take full width for easier tapping */
+    }
+
+    /* 2. Adjust content box for readability */
+    .content-box {
+        padding: 2rem;
+    }
+    .content-box h1 {
+        font-size: 2.2rem;
+    }
+    .content-box h2 {
+        font-size: 2rem;
+    }
+    .content-box p {
+        font-size: 1rem;
+    }
+
+    /* 3. Stack cards vertically on the Metodología page */
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px; /* Give cards a max-width so they don't look weirdly wide */
+    }
+}
+
+
+/* For small mobile phones (up to 480px wide) */
+@media (max-width: 480px) {
+
+    /* Fine-tune padding and font sizes for the smallest screens */
+    main {
+        padding: 1.5rem;
+    }
+
+    .content-box {
+        padding: 1.5rem;
+    }
+    .content-box h1 {
+        font-size: 1.8rem;
+    }
+    .content-box h2 {
+        font-size: 1.6rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
